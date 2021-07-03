@@ -37,10 +37,11 @@ public class DressDetailsPageTest extends TestBase {
     }
 
     @Test(priority=2)
-    public void addToCartTest() {
+    public void addToCartTest() throws InterruptedException {
         assertTrue(dressDetailsPage.canAddToCart());
         WebElement addToCartStatusHeader = dressDetailsPage.addToCart();
 
+        Thread.sleep(3000);
         assertEquals(addToCartStatusHeader.getText(), addToCartSuccessMessage);
     }
 
