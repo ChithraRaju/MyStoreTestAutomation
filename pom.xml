@@ -83,11 +83,25 @@
             <version>1.0-beta</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-testng-adapter -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports-testng-adapter</artifactId>
+            <version>1.2.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.aventstack</groupId>
+                    <artifactId>extentreports</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
         <dependency>
-            <groupId>com.relevantcodes</groupId>
+            <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
-            <version>2.41.2</version>
+            <version>5.0.8</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
@@ -95,6 +109,12 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.3.0</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>

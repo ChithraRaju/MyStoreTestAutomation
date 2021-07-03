@@ -1,15 +1,17 @@
 package com.qa.mystore.base;
 
 
+import com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Listeners;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-
+@Listeners({ExtentITestListenerClassAdapter.class})
 public class TestBase {
 
     public static WebDriver driver;
