@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Listeners;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -33,7 +34,8 @@ public class TestBase {
         String browserName = prop.getProperty("browser");
 
         if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\rajra\\IdeaProjects\\PageObjectModel\\src\\main\\resources\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver",
+                    new File("./src/main/resources/chromedriver.exe").getCanonicalPath());
 
             driver = new ChromeDriver();
 
