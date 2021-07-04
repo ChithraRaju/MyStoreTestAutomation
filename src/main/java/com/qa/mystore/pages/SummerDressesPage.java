@@ -16,9 +16,6 @@ public class SummerDressesPage extends TestBase {
     @FindBy(xpath = "//ul[@class='product_list grid row']//div[@class='product-container']")
     private List<WebElement> productContainerElements;
 
-    @FindBy(xpath = "//div[@class='clearfix']//a[@title='Proceed to checkout']")
-    private WebElement proceedToCheckoutButton;
-
     public SummerDressesPage() {
         PageFactory.initElements(driver, this);
     }

@@ -10,7 +10,6 @@ import static org.testng.Assert.*;
 
 public class HomePageTest extends TestBase {
     private HomePage homePage;
-    private SummerDressesPage summerDressesPage;
     private static final String homePageTitle = "My Store";
 
     public HomePageTest() {
@@ -35,7 +34,7 @@ public class HomePageTest extends TestBase {
 
     @Test(priority=3)
     public void navigateToSummerDressesPageTest(){
-        summerDressesPage = homePage.navigateToSummerDressesPage();
+        SummerDressesPage summerDressesPage = homePage.navigateToSummerDressesPage();
         assertNotNull(summerDressesPage);
     }
 
