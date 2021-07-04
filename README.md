@@ -5,7 +5,7 @@ This project contains the automated UI tests to test the [automationtest website
 ### Pre-requisite
 To run the test you need maven installed in your machine or you can run it via an IDE.
 
-###Instructions
+### Instructions
 To run the tests do:
 ```bash
 git clone git@github.com:ChithraRaju/MyStoreTestAutomation.git
