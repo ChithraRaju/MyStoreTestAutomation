@@ -1,5 +1,5 @@
 # MyStoreTestAutomation
-This project contains the automated UI tests to test the [automationtest website](http://automationpractice.com/index.php). It uses Selenium test framework.
+This project contains the automated UI tests to test the [automationtest website](http://automationpractice.com/index.php). It uses Hybrid framework. Design pattern used is Page Object Model and unit test framework used is TestNG
 
 ## Running the test
 ### Pre-requisite
